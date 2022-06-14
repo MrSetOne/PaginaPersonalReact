@@ -1,0 +1,25 @@
+.Knowledge__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Knowledge__container section {
+    width: 100%;
+}
+
+.Knowledge__section {
+    color: white;
+    display: block;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: min(13vw, 94px);
+    font-weight: 100;
+}
+
+.Knowledge__title {
+    font-size: 3.5rem;
+    color: white;
+}

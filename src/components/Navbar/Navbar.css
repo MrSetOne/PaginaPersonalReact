@@ -1,0 +1,25 @@
+.navbar__container {
+    background-color: var(--dark);
+    font-size: min(2rem, 4vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.7rem;
+    -webkit-box-shadow: 0px -8px 14px 15px rgba(0, 0, 0, 0.96);
+    box-shadow: 0px -8px 14px 15px rgba(0, 0, 0, 0.96);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar__title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: var(--mainYellow);
+}
+
+@media (max-width: 500px) {
+    .navbar__title {
+        font-weight: 100;
+    }
+}
