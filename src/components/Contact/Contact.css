@@ -48,6 +48,18 @@
     background-color: white;
 }
 
+.alerter {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.7rem;
+    background-color: var(--mainYellow);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    animation: alertin .5s;
+}
+
 @media (max-width: 500px) {
     .Contact__form {
         display: flex;
@@ -58,5 +70,16 @@
     }
     .Contact__form button {
         width: 100%;
+    }
+}
+
+@keyframes alertin {
+    0% {
+        bottom: 0;
+        opacity: 0;
+    }
+    100% {
+        bottom: 10px;
+        opacity: 1;
     }
 }

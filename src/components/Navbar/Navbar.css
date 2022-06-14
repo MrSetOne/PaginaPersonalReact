@@ -1,8 +1,9 @@
 .navbar__container {
     background-color: var(--dark);
-    font-size: min(2rem, 4vw);
+    font-size: min(2rem, 6vw);
+    gap: 1rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 1.7rem;
     -webkit-box-shadow: 0px -8px 14px 15px rgba(0, 0, 0, 0.96);
@@ -12,14 +13,20 @@
     z-index: 1;
 }
 
-.navbar__title {
+.navbar__nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar__title,
+.navbar__nav a {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     color: var(--mainYellow);
 }
 
-@media (max-width: 500px) {
-    .navbar__title {
-        font-weight: 100;
+@media (max-width: 515px) {
+    .navbar__container {
+        flex-direction: column;
     }
 }
