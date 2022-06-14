@@ -4,10 +4,10 @@ import Knowledge from "./Knowledge/Knowledge"
 
 function Aboutme() {
   return (
-    <div className="aboutme__container">
+    <section className="aboutme__container">
         <Mainabout/>
         <Knowledge/>       
-    </div>
+    </section>
   )
 }
 
